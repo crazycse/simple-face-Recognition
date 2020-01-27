@@ -5,6 +5,7 @@ face=cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 #creating object for Image
 img=cv2.imread("Image.jpg")
 #converting to gray
+#to
 g=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 #finding face 
 faces=face.detectMultiScale(g,scaleFactor=1.05,minNeighbors=5)
